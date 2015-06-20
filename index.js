@@ -2,8 +2,8 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 var soap = require('soap');
 var Benchmark = require('benchmark');
 var Q = require('q');
-var urlV2 = 'http://missguided-new.development.local/index.php/api/v2_soap/?wsdl=1';
-var urlV1 = 'http://missguided-new.development.local/index.php/api/soap/?wsdl=1';
+var urlV2 = 'http://magento.local/index.php/api/v2_soap/?wsdl=1';
+var urlV1 = 'http://magento.local/index.php/api/soap/?wsdl=1';
 
 var deferred = Q.defer();
 var clientv1;
@@ -120,13 +120,3 @@ login()
     suite.run({async:true});
 
 });
-
-
-
-
-
-
-
-
-
-
